@@ -1,0 +1,138 @@
+@use 'variaveis';
+
+
+.header {
+    position: sticky;
+    background-color: #00050d;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+
+    &__container{
+        max-width: 1024px;
+        margin: 0 auto;
+        display: flex;
+        position: sticky;
+        align-items: center; /* para centralizar na vertical */
+
+        @media (max-width: 768px){
+            font-size: 12px;
+        }
+    }
+
+    &__logo{
+        width: 120px;
+        display: flex;
+        align-items: center;
+        margin-right: 32px;
+        justify-content: space-between;
+        
+        @media (max-width: 768px){
+            margin-left: 16px;
+            max-width: 64px;
+        }
+    }
+
+    &__menu{
+        color: #aaa;
+        list-style: none;
+        cursor: pointer;
+        font-weight: bold;
+        display: flex;
+        font-size: 18px;
+
+
+        
+        &__titulo{
+
+            @media (max-width: 768px){
+                font-size: 12px;
+            }
+
+            &::after{
+                content: '⋁';
+            }
+
+            &:hover{
+                background-color: #191e25;
+                color:#fff;
+
+                &::after{
+                    content: '⋀';
+                    
+                }
+            }
+        }
+
+
+        &__submenu{
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+
+            list-style: none;
+            display: none; /* para não deixar o submenu não visível*/
+            background-color: red;
+            background-color: #191e25;
+            position: absolute;/*ao passar o mouse sobre o menu principal, havia um deslocamento do menu ao lado por causa da tabela essa propriedade foi add para solucionar*/
+            left: 0;
+            max-width: auto;
+            top: 100%;
+
+
+            &__li{
+                float:none ; /* ela dá o efeito de trazer um elemento p/ o lado do outro, mas tem um efeito colateral, q é o espaçamento debaixo do elemento q fica zero (colado na parte debaixo) p/ isso é criado o elemento abaixo (clear)*/
+                list-style: none;
+                color: #fff;
+                padding: 16px; /*quando é colocado apenas uma dimenção*/
+                white-space: nowrap;
+                max-width: auto;
+
+
+                &:hover{
+                    background-color: #fff;
+                    color: #00050d;
+
+
+                    &__link{
+                            color: #00050d;
+                    }
+                }
+                
+
+                &__link{
+                    display: block;
+                    padding: 2px;
+                    text-align: left;
+                    text-decoration: none;
+                    color: #aaa;
+                    
+                }
+            }
+        }
+
+
+        
+    }
+
+    .clear{
+        clear: both;
+    }
+
+}
+
+.header__menu li:hover .header__menu__submenu{
+    display: block;
+}
+
+.header__menu > li{
+    float: left;
+    list-style: none;
+    padding: 16px;
+    position: relative  ;
+}
+
+.header__menu__submenu li{
+    display: block;
+
+}

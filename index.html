@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__container">
+            <h1>
+                <img class="header__logo" src="https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png" alt="">
+            </h1>
+            <ul class="header__menu"> <!-- Criação de uma lista não ordenada p/ montar menu principal -->
+                <li class="header__menu__titulo">
+                    Início
+                    <ul class="header__menu__submenu"> <!-- Criação de uma lista não ordenada p/ montar um submenu -->
+                        <li class="header__menu__submenu__li">
+                            <a class="header__menu__submenu__li__link" href="#">Todos</a>
+                        </li>
+                        <li class="header__menu__submenu__li">
+                            <a class="header__menu__submenu__li__link" href="#">Filmes</a>
+                        </li>
+                        <li class="header__menu__submenu__li">
+                            <a class="header__menu__submenu__li__link" href="#">Séries</a>
+                        </li>
+                        <li class="header__menu__submenu__li">
+                            <a class="header__menu__submenu__li__link" href="#">Esportes</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="header__menu__titulo">
+                    Loja
+                    
+                    <ul class="header__menu__submenu"> <!-- Criação de uma lista não ordenada p/ montar um submenu -->
+                        <li class="header__menu__submenu__li">
+                            <a class="header__menu__submenu__li__link" href="#">Todos</a>
+                        </li>
+                        <li class="header__menu__submenu__li">
+                            <a class="header__menu__submenu__li__link" href="#">Alugar ou comprar</a>
+                        </li>
+                        <li class="header__menu__submenu__li">
+                            <a class="header__menu__submenu__li__link" href="#">Canais</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="header__menu__titulo">
+                    TV ao vivo
+                    
+                </li>
+
+                <li class="header__menu__titulo">
+                    Categorias
+                    <ul class="header__menu__submenu"> <!-- Criação de uma lista não ordenada p/ montar um submenu -->
+                        <li class="header__menu__submenu__li">
+                            <a class="header__menu__submenu__li__link" href="#">Comédia</a>
+                        </li>
+                        <li class="header__menu__submenu__li">
+                            <a class="header__menu__submenu__li__link" href="#">Romance</a>
+                        </li>
+                        <li class="header__menu__submenu__li">
+                            <a class="header__menu__submenu__li__link" href="#">Policial</a>
+                        </li>
+                        <li class="header__menu__submenu__li">
+                            <a class="header__menu__submenu__li__link" href="#">Máfia</a>
+                        </li>
+                        <li class="header__menu__submenu__li">
+                            <a class="header__menu__submenu__li__link" href="#">Terror</a>
+                        </li>
+                        <li class="header__menu__submenu__li">
+                            <a class="header__menu__submenu__li__link" href="#">Suspense</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            <div class="clear"></div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero__content">
+            <div class="hero__content__branding">
+                <img src="./dist/images/hero_poderoroso_chefao2_esquerda.png" alt="disneyplus">
+            </div>
+            <h3 class="title--small">
+                O melhor filme de máfia em um só lugar.
+            </h3>
+            <p class="paragrafo">
+                <a href="#" class="link-text">Assinar Prime Video</a>
+                <br>
+                <br>
+                <span class="text">
+                    R$ 27,90/mês ou R$ 279,90/ano à vista*
+                </span>
+            </p>
+            <ul class="hero__content__combos">
+                <li class="hero__content__combos__combo">
+                    <button class="button">Assine agora</button>
+                    <span class="text">R$ 45,90/mês</span>
+                </li>
+            </ul>
+            <p class="text--small">
+                *O preço pode variar caso a assinatura seja feita através de outras plataformas.
+            </p>
+        </div>
+    </section>
+    <section class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="parte_1" class="shows__tabs__button shows__tabs__button--is-active">
+                Parte 1
+            </button>
+            <button data-tab-button="parte_2" class="shows__tabs__button">
+                Parte 2
+            </button>
+            <button data-tab-button="parte_3" class="shows__tabs__button">
+                Parte 3
+            </button>
+        </nav>
+        <ul data-tab-id="parte_1" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <img src="./dist/images/cena1.jpeg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/cena2.jpeg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/cena3.jpeg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/cena5.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/cena6.png" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/cena7.jpeg" alt="spidey">
+            </li>
+        </ul>
+        <ul data-tab-id="parte_2" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/cena7.jpeg" alt="obi_wan">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/cena6.png" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/cena3.jpeg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/cena5.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/cena1.jpeg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/cena2.jpeg" alt="spidey">
+            </li>
+        </ul>
+        <ul data-tab-id="parte_3" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/cena3.jpeg" alt="obi_wan">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/cena6.png" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/cena7.jpeg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/cena5.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/cena2.jpeg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/cena1.jpeg" alt="spidey">
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./dist/images/footer_prime.png" alt="Disney+">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Termos e aviso de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Enviar feedback</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    © 1996-2024, Amazon.com, Inc. ou suas afiliadas
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./dist/js/main.js"></script>
+</body>
+</html>
